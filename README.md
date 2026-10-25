@@ -13,8 +13,6 @@ I analyzed employee attrition data and compared three classification models to u
 
 I used the IBM HR Analytics employee attrition dataset. The CSV contains 1,470 records and 35 columns. The target column is `Attrition`, with 237 employees marked `Yes` (16.1%) and 1,233 marked `No` (83.9%).
 
-I have not verified the original dataset publication or download URL.
-
 ## What I did
 
 1. Inspected the dataset, its columns, and the attrition class distribution.
@@ -38,17 +36,17 @@ In the saved notebook results, Logistic Regression had the highest ROC-AUC and w
 
 These scores come from one train/test split and have not been independently reproduced. I consider them an initial model comparison, not a guarantee of performance on future employee data.
 
-My exploratory analysis found an overall attrition rate of 16.1%, a rate of 20.6% in Sales, and a rate of 39.8% for Sales Representatives. Employees who left had an average monthly income 2,046 lower than employees who stayed. The notebook displays income with a rupee symbol, but I have not verified the dataset's currency, so I have not assigned a currency to that difference here.
+My exploratory analysis found an overall attrition rate of 16.1%, a rate of 20.6% in Sales, and a rate of 39.8% for Sales Representatives. Employees who left had an average monthly income 2,046 lower than employees who stayed.
 
 ## Tools and libraries
 
-I used Python with pandas, NumPy, Matplotlib, seaborn, and scikit-learn. The project does not specify package versions or include a dependency file.
+I used Python with pandas, NumPy, Matplotlib, seaborn, and scikit-learn.
 
 ## Running the notebook
 
 Open `analysis_1.ipynb` in Jupyter or Google Colab. Update the dataset-loading cell to match the location of the CSV in your environment. The notebook currently reads from `/content/WA_Fn-UseC_-HR-Employee-Attrition.csv` and creates a `charts/` directory next to the notebook when it generates figures.
 
-The project does not specify tested Python or package versions. Use an environment with compatible versions of the libraries listed above.
+Use an environment with compatible versions of the libraries listed above.
 
 ## Limitations and responsible use
 
